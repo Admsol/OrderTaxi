@@ -1,0 +1,24 @@
+{
+  "name": "MaterialTime",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Admsol/MaterialTime",
+  "authors": [
+    "pkumkovs"
+  ],
+  "description": "Material Timer with Account",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "polymer": "Polymer/polymer#~1.1.4",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.5"
+  }
+}

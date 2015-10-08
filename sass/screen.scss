@@ -1,0 +1,148 @@
+@import "compass/reset";
+body {
+	background: #FFEB3B;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+.p_signup_Title {
+	font-weight: 400;
+}
+
+.p_mainTitle {
+	color: white;
+	font-weight: 700;
+	font-size: 100px;
+	text-align: right;
+}
+.p_result_title
+{
+	color: white;
+	font-weight: 700;
+	font-size: 100px;
+	text-align: center;
+}
+
+.p_mainTitle2 {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.p_row_mainTaxis {
+	padding-top: 150px;
+}
+
+.p_configurator {
+	box-shadow: 0px 3px 1px #B6B6B6;
+	position: relative;
+	top: 200px;
+	background: white;
+}
+
+.p_result {
+	box-shadow: 0px 3px 1px #B6B6B6;
+	position: relative;
+	top: 300px;
+}
+
+.hiddenResponsive {
+	display: none;
+}
+
+.p_signupContent {
+	paper-input {
+		margin-top: 5px;
+	}
+}
+
+.p_inputBox {
+	width: 400px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.p_signup_explainHelper {
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+.p_signup_configTaxi {
+	margin-top: 90px;
+}
+
+.p_resultDiv {
+	position: relative;
+	top: 400px;
+}
+
+.p_result_leftArrow {
+	position: absolute;
+	left: 35%;
+	top: -20%;
+	z-index: 2;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: 3;
+	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	transition-delay: 2s;
+}
+.p_result_rightArrow {
+	position: absolute;
+	left: 65%;
+	top: 15%;
+	z-index: 2;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: 3;
+	animation-duration: 10s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	transition-delay: 2s;
+}
+
+.robotoLight {
+	font-size: 15px;
+	font-weight: 200;
+}
+.p_rightBlock
+{
+	padding-top: 70px;
+	padding-left: -10px;
+}
+.p_engineImg {
+	width: 200px;
+}
+.p_leftEngine
+{
+	padding-top: 20px;
+}
+.p_topFix
+{
+	margin-top: 240px;
+}
+.p_leftBloc
+{
+	margin-left: 60px;
+}
+.p_boostButton
+{
+	color: white;
+	width: 400px;
+	font-weight: 600;
+	margin-bottom: 90px;
+	margin-top: 20px;
+}
+.p_secondEngine
+{
+	display: inline-block;
+}
+
+@media screen and (max-width: 950px) {
+	.hiddenResponsive {
+		height: 10000px;
+		display: block !important;
+	}
+}

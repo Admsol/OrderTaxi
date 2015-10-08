@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!--Bower Includes-->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!--Polymer-->
+	<link rel="import" href="bower_components/paper-button/paper-button.html">
+	<link rel="import" href="bower_components/paper-card/paper-card.html">
+	<link rel="import" href="bower_components/paper-input/paper-input.html">
+	<link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+	<link rel="import" href="bower_components/paper-menu/paper-menu.html">
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+	<!--GoogleFonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+	<!--Sass-->
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+	<!--Animate.css-->
+	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+
+	<!--My class-->
+	<script src="js/scrollhelper.js"></script>
+	<script src="js/mainFactory.js"></script>
+	<script src="js/main.js"></script>
+
+	<!--Styling POLYMER-->
+	<style is="custom-style">
+		:root {
+			/*	--paper-input-container-color: grey;*/
+			
+			--paper-input-container-focus-color: #FBC02D;
+			/* Label and underline color when the input is invalid */
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="p_mainTitle2 hiddenResponsive">This website is not intended to be responsive</h1>
+
+	<!--Main Taxi Div-->
+	<div class="row p_row_mainTaxis">
+		<h1 class="p_mainTitle col-xs-offset-1 col-xs-4">We disrupt Taxis.</h1>
+		<img class="p_mainTaxiImg col-xs-6 animated fadeInRightBig" src="img/smallTaxi.png">
+	</div>
+	<h2 class="hidden row p_mainTitle p_mainTitle2 col-xs-3 col-xs-offset-3 ">This service was created to help you to disrupt the classic Taxi industry.</h2>
+	<!--End Main Taxi Row-->
+
+
+	<!-- Cofigurator div -->
+	<div class="p_configurator container-fluid">
+
+
+
+		<!--Input taxi details-->
+		<div class="row">
+			<div class="col-xs-5 col-xs-offset-2">
+				<paper-card class="p_inputBox">
+					<div class="card-content p_signupContent">
+						<p class="p_signup_Title">Taxi Factory</p>
+						<p class="p_signup_explainHelper">Please enter your Taxi components to see the results. </p>
+						<paper-input class="p_signup_myInput" id="taxiName" label="Taxi Name"></paper-input>
+						<paper-input class="p_signup_myInput" id="taxiEngine" label="Taxi Engine (v8 Supercharged)"></paper-input>
+						<paper-input class="p_signup_myInput" id="taxiTires" label="Taxi Tires (
+Hankook iPike RSV)"></paper-input>
+					</div>
+
+
+					<div class="card-actions">
+						<paper-button raised id="validateBtn" class="center-block">Build my taxi</paper-button>
+					</div>
+				</paper-card>
+			</div>
+			<img id="configTaxi" src="img/smallTaxi_config.png" class="p_signup_configTaxi col-xs-4">
+
+
+
+		</div>
+	</div>
+
+	<!-- Result Div -->
+	<div id="resultDiv" class="container-fluid p_resultDiv hidden">
+		
+		<!--Input taxi details-->
+		<div class="row">
+			<div class="col-xs-2 col-xs-offset-1 p_leftBlock">
+				<img alt="EngineImage" class="center-block p_engineImg" src="img/engine.jpg">
+				<div class="center-block p_leftEngine">
+					<p class="center-text text-center p_secondEngine"><span class="robotoLight">Engine: </span><p id="engineId" class="p_secondEngine"> v8 Supercharged</p></p>
+				</div>
+
+
+			</div>
+
+			<img class="p_result_leftArrow animated tada p_topFix" src="img/arrowLeft.png">
+			<img id="resultTaxi" src="img/smallTaxi_result.png" class="center-block p_resultTaxi col-xs-6 p_topFix">
+			<img class="p_result_rightArrow animated tada p_topFix" src="img/rightArrow.png">
+
+			<div class="col-xs-2 p_rightBlock">
+				<img alt="EngineImage" class="center-block p_engineImg" src="img/tire.png">
+				<div class="center-block p_leftEngine">
+					<p class="center-text text-center"><span class="robotoLight">Tires: </span>Hankook iPike RSV</p>
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+		<h1 class="p_result_title">Taxi Name</h1>
+		<paper-button raised class="center-block p_boostButton"> Sport boost</paper-button>
+	</div>
+
+
+
+
+</body>
+
+</html>
