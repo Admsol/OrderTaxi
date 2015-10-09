@@ -210,26 +210,27 @@ body {
 }
 
 /* line 126, ../sass/screen.scss */
-.p_leftBloc {
-  margin-left: 60px;
+.p_leftBlock {
+  margin-top: -60px;
 }
 
 /* line 130, ../sass/screen.scss */
 .p_boostButton {
-  color: white;
+  color: black;
   width: 400px;
   font-weight: 600;
   margin-bottom: 90px;
   margin-top: 20px;
+  font-weight: 200;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .p_secondEngine {
   display: inline-block;
 }
 
 @media screen and (max-width: 950px) {
-  /* line 144, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   .hiddenResponsive {
     height: 10000px;
     display: block !important;

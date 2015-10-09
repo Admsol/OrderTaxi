@@ -11,7 +11,7 @@
 
 
 function Taxi(options) {
-	this.name = options.name || "Default Name";
+	this.name = options.name || "Taxi";
 	this.engine = options.engine || "VM Motori 2.5 litre";
 	this.tires = options.tires || "Stock tires";
 	this.power = options.power || 160;
@@ -22,8 +22,9 @@ function Taxi(options) {
 Taxi.prototype = {
 
 	addTurbo: function () {
-		this.engine = "V8 Twin-turbo";
+		this.engine = " V8 Twin-turbo";
 		this.engineLvl = "Lvl2 supercharged";
+		this.tires = "Continental DWS Tires LS";
 		this.power = 400;
 	}
 };

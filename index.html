@@ -72,7 +72,7 @@ Hankook iPike RSV)"></paper-input>
 
 
 					<div class="card-actions">
-						<paper-button raised id="validateBtn" class="center-block">Build my taxi</paper-button>
+						<paper-button raised id="validateBtn" class="center-block" href="#resultAnchor">Build my taxi</paper-button>
 					</div>
 				</paper-card>
 			</div>
@@ -89,9 +89,9 @@ Hankook iPike RSV)"></paper-input>
 		<!--Input taxi details-->
 		<div class="row">
 			<div class="col-xs-2 col-xs-offset-1 p_leftBlock">
-				<img alt="EngineImage" class="center-block p_engineImg" src="img/engine.jpg">
-				<div class="center-block p_leftEngine">
-					<p class="center-text text-center p_secondEngine"><span class="robotoLight">Engine: </span><p id="engineId" class="p_secondEngine"> v8 Supercharged</p></p>
+				<img id="engineImage" alt="EngineImage" class="center-block p_engineImg" src="img/engine.jpg">
+				<div class="center-block text-center p_leftEngine">
+					<p id="engineText" class="center-text text-center p_secondEngine">v8 Supercharged</p>
 				</div>
 
 
@@ -102,9 +102,9 @@ Hankook iPike RSV)"></paper-input>
 			<img class="p_result_rightArrow animated tada p_topFix" src="img/rightArrow.png">
 
 			<div class="col-xs-2 p_rightBlock">
-				<img alt="EngineImage" class="center-block p_engineImg" src="img/tire.png">
+				<img id="tireImage" alt="tireImage" class="center-block p_engineImg" src="img/tire.png">
 				<div class="center-block p_leftEngine">
-					<p class="center-text text-center"><span class="robotoLight">Tires: </span>Hankook iPike RSV</p>
+					<p id="tiresText" class="center-text text-center">Hankook iPike RSV</p>
 				</div>
 
 
@@ -113,8 +113,8 @@ Hankook iPike RSV)"></paper-input>
 
 
 		</div>
-		<h1 class="p_result_title">Taxi Name</h1>
-		<paper-button raised class="center-block p_boostButton"> Sport boost</paper-button>
+		<h1 class="p_result_title" id="displayTaxiName">Taxi Name</h1>
+		<paper-button id="sportBoost" raised class="center-block p_boostButton"> Sport boost</paper-button>
 	</div>
 
 
