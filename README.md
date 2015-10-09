@@ -2,6 +2,8 @@
 
 Javascript Training project.
 
+<a href="http://admsol.github.io/OrderTaxi/">DEMO</a>
+
 Simple taxi order website.
 
 Stack:
